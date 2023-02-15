@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title>Marketing Template</title>
+
+ 	<style>
+	
+
+	*
+	{
+		box-sizing:border-box;
+	}
+
+	.header
+	 {
+            margin-bottom:50px;
+		padding: 20px;
+	}
+	.topnav
+	{
+            margin-bottom:200px;
+		position:fixed;
+ 		top=0;
+		left:0;
+		z-index:1;
+		background-color:lightgray;
+		width:100%;
+	}
+	.topnav a
+	{
+		float:left;
+ 		color:black;
+            text-align:center;
+		font-size:20px;
+		display:block;
+		padding:14px 16px;
+            text-decoration:none;
+		
+	}
+	.topnav a:hover
+	{
+		background-color:#ddd;
+            color:gray;
+	}
+        h1, h6
+	{
+		text-indent:200px;
+      		
+     
+	}
+       
+
+
+	h2
+	{
+		margin-bottom:50px;
+            margin-top:50px;
+		text-align:center;
+        	text-decoration-line:underline;
+            text-decoration-thickness:3.5px;
+	}
+
+	.box 
+	{
+            margin-left:200px;
+ 	 	float: left;
+  		width: 18%;
+ 		padding: 50px;
+	}
+	.box1 
+	{
+ 	 	float: left;
+  		width: 18%;
+ 		padding: 50px;
+	}
+
+	.box2 
+	{
+ 	 	float: left;
+  		width: 18%;
+ 		 padding: 50px;
+	}
+
+	.box3 
+	{
+ 	 	float: left;
+  		width: 17%;
+ 		 padding: 50px;
+	}
+	
+	.clearfix::after
+	 {
+  		content: "";
+  		clear: both;
+  		display: table;
+	 }
+
+         p
+	 {
+            margin-bottom:50px;
+		text-align:left;
+	 }
+       h5
+       {
+             text-align:left;
+       }
+	h3
+	{
+		margin-bottom:50px;
+                margin-top:50px;
+		text-align:center;
+	}
+	h4
+	{
+        	text-align:center;
+        	
+	}
+
+
+
+
+	.row 
+	{
+            height:20px;
+  		margin-left:5px;
+  		margin-right:5px;
+            margin-top:5px;
+            margin-bottom:5px;
+	}
+  
+	.column 
+	{
+            margin-left:200px;
+  		float: left;
+            width: 25%;
+  		padding: 5px;
+	}
+	.column1 
+	{
+              
+  		float: left;
+  		width: 25%;
+  		padding: 5px;
+	}
+	.column2 
+	{
+               
+  		float: left;
+  		width: 25%;
+  		padding: 5px;
+	}
+
+
+
+	
+	.row::after 
+	{
+  		content: "";
+ 		clear: both;
+  		display: table;
+	}
+
+	table 
+	{
+            margin-bottom:20px;
+  		border-collapse: collapse;
+  		border-spacing: 0;
+  		width: 85%;
+  		border: 1px solid #ddd;
+	}
+
+	th
+	{
+		font-size:1.5em;
+		text-color:white;
+  		 border: 1px solid black;
+  		border-collapse: collapse;
+  		text-align:center;
+ 
+	}
+	td 
+	{
+  		 border: 1px solid black;
+  		border-collapse: collapse;
+  		text-align:center;
+ 
+	}
+
+	.button 
+	{
+ 	 	background-color: #4CAF50;
+ 	 	border: none;
+ 	 	color: white;
+ 	 	padding: 10px 20px;
+ 	 	text-align: center;
+  		text-decoration: none;
+ 	 	display: inline-block;
+ 	 	font-size: 20px;
+	 	 margin: 4px 2px;
+ 	 	cursor: pointer;
+	}
+
+
+	div.gallery 
+	{
+  		margin-left:208px;
+  		padding:8px;
+  		border: 1px solid #ccc;
+  		float: left;
+ 		 width: 355px;
+	}
+
+
+	div.gallery1 
+	{
+  		padding:8px;
+  		border: 1px solid #ccc;
+  		float: left;
+  		width: 355px;
+	}
+
+
+	div.gallery2
+	{
+  
+  		 padding:8px;
+  		border: 1px solid #ccc;
+  		float: left;
+  		width: 355px;
+	}
+
+
+
+     div.gallery:hover
+ 	{
+  		border: 1px solid #777;
+	}
+
+	div.gallery1:hover
+     {
+  		border: 1px solid #777;
+	}
+
+	div.gallery2:hover 
+	{
+  		border: 1px solid #777;
+	}
+
+
+	div.gallery img 
+	{
+  		width: 100%;
+  		height: auto;
+	}
+
+	div.gallery1 img
+	 {
+  		width: 100%;
+  		height: auto;
+	}
+	div.gallery2 img
+	 {
+  		width: 100%;
+  		height: auto;
+	}
+
+
+
+	div.desc 
+     {
+  		padding: 5px;
+ 		 text-align: center;
+	}
+
+
+	.button1								
+	 {
+         margin-left:20px;
+	background-color: lightgray;
+ 	 border: none;
+ 	 color: black;
+ 	 padding: 10px 20px;
+ 	 text-align: center;
+  	text-decoration: none;
+ 	
+ 	 font-size: 20px;
+	  margin: 10px 2px;
+ 	 cursor: pointer;
+	}
+
+	form
+	{
+ 		margin-bottom:100px;
+		 margin-left:200px;
+ 		margin-right:200px;
+ 		float:left;
+		 width:71%;
+	}
+
+
+	input
+	{
+		height:40px;
+	}
+
+	.footer 
+	{
+  		position: fixed;
+   		left: 0;
+   		bottom: 0;
+   		width: 100%;
+   		background-color: gray;
+   		color: black;
+   		text-align: center;
+	}
+
+</style>
+</head>
+<body>
+       <!--Navigation bar--!>
+ 	<div class="header">
+	<div class="topnav">
+	<a href="#"  style="width:25%">Home</a>
+	<a href="#"  style="width:25%">Plans</a>
+	<a href="#"  style="width:25%">About</a>
+	<a href="#"  style="width:25%">Contact</a>
+        </div>
+	</div>
+
+	<h1>MARKETING</h1>
+        <h6>Template by w3.css</h6>
+
+        <!--Home Image-->
+        <img src="Marketing1.jpg" width="1070" height="400" style="margin-left:200px;"></img>
+
+
+	<h2>What We Offer</h2>
+
+      
+      <!--Grid-->
+	<div class="clearfix">
+  		<div class="box" style="background-color:#DCDCDC">
+		<h5>Design</h5>
+		<p>Some text some text</p>
+		</div>
+
+		<div class="box1" style="background-color:#A8A8A8">
+		<h5>Branding</h5>
+		<p>Some text</p>
+		</div>
+
+		<div class="box2" style="background-color:#808080">
+		<h5>consultation</h5>
+		<p>Some text</p>
+		</div>
+
+		<div class="box3" style="background-color:#606060">
+		<h5>Premium</h5>
+		<p>Some text</p>
+		</div>
+	</div>
+
+
+
+	<h3>Pricing Plans</h3>
+        <h4>Choose a pricing plan that fits your need</h4>
+
+
+      <!--Pricing plan table-->
+	<div class="row">
+  	<div class="column">
+   	 <table>
+      		<tr style="height:80px"</tr>      			
+		 <th style="background-color:#505050">Basic</th>
+     	        </tr>
+              <tr style="height:50px">
+     			<td><b>10GB</b> Storage</td>
+      		</tr>
+      		<tr style="height:50px">
+       			<td><b>10</b> Emails</td>
+      		</tr>
+      		<tr style="height:50px">
+      			<td></b>10</b> Domains</td>
+     	        </tr>
+	        
+		<tr style="height:50px">
+      			<td><b>Endless</b> support</td>
+      		</tr>
+	<tr style="height:100px">
+        		<td><b style="font-size:2em">$10</b> <br>Per month</td>
+      		</tr>
+     		<tr style="background-color:lightgray;" "height:80px">
+      			<td><button class="button">Sign up</button></td>
+      		</tr>
+    			</table>
+  		</div>
+
+
+
+  	<div class="column1">
+    	<table>
+      		<tr style="height:80px"</tr>
+        		<th style="background-color:#808080">Pro</th>
+        	</tr>
+		 
+		<tr style="height:50px">
+     			<td style="width:10px; height:20px;"><b>25GB</b> Storage</td>
+      		</tr>
+        	 
+		<tr style="height:50px">
+       			<td><b>25</b> Emails</td>
+       	 	</tr>
+       		 
+		<tr style="height:50px">
+      			<td><b>25</b> Domains</td>
+       		 </tr>
+		
+     		
+		 
+		<tr style="height:50px">
+      			<td><b>Endless</b> support</td>
+      		</tr>
+		 
+		<tr style="height:100px">
+        		 <td><b style="font-size:2em">$25</b> <br>Per month</td>
+     		 </tr>
+      		<tr style="background-color:lightgray;" "height:80px">
+			 <td><button class="button">Sign up</button></td>
+      		</tr>
+    	</table>
+  </div>
+      
+ <div class="column2">
+    <table>
+      <tr style="height:80px"</tr>
+        <th style="background-color:#505050">Premium</th>
+      </tr>
+       
+		<tr style="height:50px">
+     		<td><b>50GB</b> Storage</td>
+      </tr>
+       
+		<tr style="height:50px">
+       		<td><b>50</b> Emails</td>
+      </tr>
+       
+		<tr style="height:50px">
+     		<td><b>50</b> Domains</td>
+      </tr>
+	
+	 
+		<tr style="height:50px">
+      			<td><b>Endless</b> support</td>
+      </tr>
+       
+		<tr style="height:100px">
+       		<td><b style="font-size:2em">$50</b><br> Per month</td>
+      </tr>
+      <tr style="background-color:lightgray;" "height:80px">
+     		<td><button class="button">Sign up</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+<h2 style="margin-top:550px;">Who We Are</h2>
+
+
+ <!--Who we are Image gallery-->
+ <div class="gallery">
+  <a target="_blank" href="aatik.jpg">
+    <img src="aatik.jpg" alt="CEO" width="600" height="400">
+  </a>
+  <div class="desc"><b style="font-size:1.5em">Anand</b> <br><b style="font-size:1em;">CEO/Co-founder</b><br>Leading and motivating subordinates to advance employee engagement</div>
+ <div class="desc"><button class="button1">Contact</button></div>
+</div>
+
+<div class="gallery1">
+  <a target="_blank" href="sitara.jpg">
+    <img src="sitara.jpg" alt="Art director" width="600" height="400">
+  </a>
+  <div class="desc"><b style="font-size:1.5em">Sitara</b><br><b style="font-size:1em;">Art Director</b><br>Co-ordinate the work of overall visual aspects os advertising or media campaign.</div>
+ <div class="desc"><button class="button1">Contact</button></div>
+</div>
+
+<div class="gallery2">
+  <a target="_blank" href="siri.jpg">
+    <img src="siri.jpg" alt="Designer" width="600" height="400">
+  </a>
+  <div class="desc"><b style="font-size:1.5em">Siri</b><br><b style="font-size:1em;">Designer</b><br>Graphic design specialist, Develop advertising and marketing.</div>
+  <div class="desc"><button class="button1">Contact</button></div>
+</div>
+
+
+
+<h2 style="margin-top:500px;">Contact Us</h2>
+       
+<!--Form-->	
+<form>
+  <label for="username">Name:</label><br>
+  <input type="text" style="width:100%;"  id="username" name="username"><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" style="width:100%;" id="email" name="email"><br><br>
+<label for="name">Subject:</label><br>
+  <input type="text" style="width:100%;" id="name" name="name"><br><br>
+<label for="message">Message:</label><br>
+  <input type="text" style="width:100%;" id="message" name="message"><br><br>
+  <input type="submit" value="Send" style="width:100%";>
+</form>
+
+<!--Footer-->
+<div class="footer">
+  <p1>Footer<br></p1>
+  <button class="button1">To the top</button>
+</div>
+
+
+  
+ </body>
+</html>
