@@ -4,12 +4,21 @@
 	<title>Marketing Template</title>
 
  	<style>
+	html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+
 	
 
 	*
 	{
 		box-sizing:border-box;
 	}
+
+
+
+
+
+
+
 
 	.header
 	 {
@@ -42,6 +51,101 @@
 		background-color:#ddd;
             color:gray;
 	}
+      
+       
+
+
+
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1070px;
+  position: relative;
+  margin-left: 200px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
         h1, h6
 	{
 		text-indent:200px;
@@ -66,12 +170,18 @@
  	 	float: left;
   		width: 18%;
  		padding: 50px;
+            color:white;
+            background-color: #f1f1f1!important;
+           
 	}
 	.box1 
 	{
  	 	float: left;
   		width: 18%;
  		padding: 50px;
+		color:white;
+            background-color: #9e9e9e!important;
+            
 	}
 
 	.box2 
@@ -79,6 +189,8 @@
  	 	float: left;
   		width: 18%;
  		 padding: 50px;
+		color:white;
+                background-color: #616161!important
 	}
 
 	.box3 
@@ -86,6 +198,8 @@
  	 	float: left;
   		width: 17%;
  		 padding: 50px;
+		color:white;
+		background-color:#000!important;
 	}
 	
 	.clearfix::after
@@ -168,14 +282,20 @@
   		width: 85%;
   		border: 1px solid #ddd;
 	}
+      .table:hover
+	{
+		border: 3px solid #777;
+		 background-color:lightgray;
+      }
 
 	th
 	{
-		font-size:1.5em;
-		text-color:white;
+		font-size:1.4em;
+		color:white;
   		 border: 1px solid black;
   		border-collapse: collapse;
   		text-align:center;
+		
  
 	}
 	td 
@@ -199,13 +319,33 @@
 	 	 margin: 4px 2px;
  	 	cursor: pointer;
 	}
+	.button3
+	 {
+  		background-color: #4CAF50; 
+  		color: white; 
+  		border: 2px solid gray;
+	}
+
+     .button3:hover 
+	{
+  		background-color: gray;
+  		color: black;
+	}
+
+      
+
+
+
+
+
+	
 
 
 	div.gallery 
 	{
   		margin-left:208px;
   		padding:8px;
-  		border: 1px solid #ccc;
+  		border: 3px solid #ccc;
   		float: left;
  		 width: 355px;
 	}
@@ -214,7 +354,7 @@
 	div.gallery1 
 	{
   		padding:8px;
-  		border: 1px solid #ccc;
+  		border: 3px solid #ccc;
   		float: left;
   		width: 355px;
 	}
@@ -224,7 +364,7 @@
 	{
   
   		 padding:8px;
-  		border: 1px solid #ccc;
+  		border: 3px solid #ccc;
   		float: left;
   		width: 355px;
 	}
@@ -233,17 +373,20 @@
 
      div.gallery:hover
  	{
-  		border: 1px solid #777;
+  		border: 3px solid #777;
+		 background-color:lightgray;
 	}
 
 	div.gallery1:hover
      {
-  		border: 1px solid #777;
+  		border: 3px solid #777;
+		 background-color:lightgray;
 	}
 
 	div.gallery2:hover 
 	{
-  		border: 1px solid #777;
+  		border: 3px solid #777;
+            background-color:lightgray;
 	}
 
 
@@ -276,9 +419,9 @@
 	.button1								
 	 {
          margin-left:20px;
-	background-color: lightgray;
+	background-color: gray;
  	 border: none;
- 	 color: black;
+ 	 color: white;
  	 padding: 10px 20px;
  	 text-align: center;
   	text-decoration: none;
@@ -288,6 +431,19 @@
  	 cursor: pointer;
 	}
 
+
+      .button2 {
+  background-color: gray; 
+  color: black; 
+  border: 2px solid gray;
+}
+
+.button2:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
 	form
 	{
  		margin-bottom:100px;
@@ -296,6 +452,15 @@
  		float:left;
 		 width:71%;
 	}
+
+
+
+
+.form1
+{
+background-color:black;
+color:white;
+}
 
 
 	input
@@ -330,8 +495,67 @@
 	<h1>MARKETING</h1>
         <h6>Template by w3.css</h6>
 
-        <!--Home Image-->
-        <img src="Marketing1.jpg" width="1070" height="400" style="margin-left:200px;"></img>
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Marketing.jpg" style="width:100%">
+  <div class="text">Dedication</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Marketing1.jpg" style="width:100%">
+  <div class="text">Team</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Marketing2.jpg" style="width:100%">
+  <div class="text">Grow together</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 
 
 	<h2>What We Offer</h2>
@@ -371,7 +595,7 @@
   	<div class="column">
    	 <table>
       		<tr style="height:80px"</tr>      			
-		 <th style="background-color:#505050">Basic</th>
+		 <th style="background-color:#000!important">Basic</th>
      	        </tr>
               <tr style="height:50px">
      			<td><b>10GB</b> Storage</td>
@@ -390,7 +614,7 @@
         		<td><b style="font-size:2em">$10</b> <br>Per month</td>
       		</tr>
      		<tr style="background-color:lightgray;" "height:80px">
-      			<td><button class="button">Sign up</button></td>
+      			<td><button class="button button3">Sign up</button></td>
       		</tr>
     			</table>
   		</div>
@@ -425,7 +649,7 @@
         		 <td><b style="font-size:2em">$25</b> <br>Per month</td>
      		 </tr>
       		<tr style="background-color:lightgray;" "height:80px">
-			 <td><button class="button">Sign up</button></td>
+			 <td><button class="button button3">Sign up</button></td>
       		</tr>
     	</table>
   </div>
@@ -433,7 +657,7 @@
  <div class="column2">
     <table>
       <tr style="height:80px"</tr>
-        <th style="background-color:#505050">Premium</th>
+        <th style="background-color:#000!important"> Premium</th>
       </tr>
        
 		<tr style="height:50px">
@@ -457,7 +681,7 @@
        		<td><b style="font-size:2em">$50</b><br> Per month</td>
       </tr>
       <tr style="background-color:lightgray;" "height:80px">
-     		<td><button class="button">Sign up</button></td>
+     		<td><button class="button button3">Sign up</button></td>
       </tr>
     </table>
   </div>
@@ -474,7 +698,7 @@
     <img src="aatik.jpg" alt="CEO" width="600" height="400">
   </a>
   <div class="desc"><b style="font-size:1.5em">Anand</b> <br><b style="font-size:1em;">CEO/Co-founder</b><br>Leading and motivating subordinates to advance employee engagement</div>
- <div class="desc"><button class="button1">Contact</button></div>
+ <div class="desc"><button class="button1 button2">Contact</button></div>
 </div>
 
 <div class="gallery1">
@@ -482,7 +706,7 @@
     <img src="sitara.jpg" alt="Art director" width="600" height="400">
   </a>
   <div class="desc"><b style="font-size:1.5em">Sitara</b><br><b style="font-size:1em;">Art Director</b><br>Co-ordinate the work of overall visual aspects os advertising or media campaign.</div>
- <div class="desc"><button class="button1">Contact</button></div>
+ <div class="desc"><button class="button1 button2">Contact</button></div>
 </div>
 
 <div class="gallery2">
@@ -490,7 +714,7 @@
     <img src="siri.jpg" alt="Designer" width="600" height="400">
   </a>
   <div class="desc"><b style="font-size:1.5em">Siri</b><br><b style="font-size:1em;">Designer</b><br>Graphic design specialist, Develop advertising and marketing.</div>
-  <div class="desc"><button class="button1">Contact</button></div>
+  <div class="desc"><button class="button1 button2">Contact</button></div>
 </div>
 
 
@@ -507,8 +731,10 @@
   <input type="text" style="width:100%;" id="name" name="name"><br><br>
 <label for="message">Message:</label><br>
   <input type="text" style="width:100%;" id="message" name="message"><br><br>
-  <input type="submit" value="Send" style="width:100%";>
+  <input type="submit" class="form1" value="Send" style="width:100%">
 </form>
+
+
 
 <!--Footer-->
 <div class="footer">
